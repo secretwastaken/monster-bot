@@ -89,8 +89,7 @@ bot.on(Events.MessageCreate, async (message) => {
   const command = bot.prefixCommands.get(commandName);
   if (!command) return;
 
-  // já não precisa de try/catch aqui
-  await command.execute(message);
+  await command.execute(message, args);
 });
 
 // Path to your events folder
