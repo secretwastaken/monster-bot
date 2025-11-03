@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node deploy-commands.js && nodemon index.js",
+    "start": "node scripts/syncUsers.js && node deploy-commands.js && nodemon index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
