@@ -8,6 +8,7 @@ module.exports = {
 
   async execute(interaction) {
     try {
+      console.log(interaction.user);
       const sent = await interaction.reply({
         content: "🏓 Calculando...",
         fetchReply: true,
